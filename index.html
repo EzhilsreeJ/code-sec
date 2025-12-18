@@ -1,10 +1,114 @@
-This project is a simple static website for Saveetha Engineering College, designed to showcase its offerings and information to prospective students and visitors. It includes a basic navigation, an about section, department information, admissions details, and contact information.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saveetha Engineering College</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/logo.png" alt="Saveetha Engineering College Logo" class="logo">
+            <h1>Saveetha Engineering College</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#departments">Departments</a></li>
+                    <li><a href="#admissions">Admissions</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-.
-├── index.html
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-└── images/
-    └── logo.png
+    <section id="hero">
+        <div class="container">
+            <h2>Innovating the Future of Technology</h2>
+            <p>Empowering students with knowledge, skills, and ethical values.</p>
+            <a href="#admissions" class="cta-button">Apply Now</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Saveetha Engineering College</h2>
+            <p>Saveetha Engineering College (SEC), established in 2001, is a premier institution dedicated to academic excellence and research. We offer a wide range of undergraduate and postgraduate programs across various engineering disciplines. Our commitment is to foster innovation, critical thinking, and a lifelong learning attitude among our students.</p>
+            <p>Located in the vibrant city of Chennai, SEC boasts state-of-the-art infrastructure, experienced faculty, and a dynamic campus environment.</p>
+        </div>
+    </section>
+
+    <section id="departments">
+        <div class="container">
+            <h2>Our Departments</h2>
+            <div class="department-grid">
+                <div class="department-card">
+                    <h3>Computer Science and Engineering</h3>
+                    <p>Exploring the frontiers of computing, AI, and data science.</p>
+                </div>
+                <div class="department-card">
+                    <h3>Electronics and Communication Engineering</h3>
+                    <p>Innovating in telecommunications, embedded systems, and signal processing.</p>
+                </div>
+                <div class="department-card">
+                    <h3>Mechanical Engineering</h3>
+                    <p>Driving advancements in design, manufacturing, and automation.</p>
+                </div>
+                <div class="department-card">
+                    <h3>Civil Engineering</h3>
+                    <p>Building sustainable infrastructure for the future.</p>
+                </div>
+                <div class="department-card">
+                    <h3>Electrical and Electronics Engineering</h3>
+                    <p>Powering innovation in electrical systems and renewable energy.</p>
+                </div>
+                <div class="department-card">
+                    <h3>Artificial Intelligence and Data Science</h3>
+                    <p>Specializing in cutting-edge AI and data-driven solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="admissions">
+        <div class="container">
+            <h2>Admissions</h2>
+            <p>We are excited to welcome aspiring students to join our community. Admissions for the upcoming academic year are now open.</p>
+            <h3>Eligibility Criteria:</h3>
+            <ul>
+                <li>For B.E./B.Tech: A pass in the 10+2 examination with Mathematics, Physics and Chemistry as compulsory subjects or any other examination of the equivalent.</li>
+                <li>For M.E./M.Tech: A pass in a relevant Bachelor's degree in Engineering/Technology.</li>
+            </ul>
+            <p>For detailed information on programs, eligibility, and the application process, please visit our admissions portal or contact us.</p>
+            <a href="#" class="cta-button">Apply Online</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>We are here to help you with any queries you may have.</p>
+            <div class="contact-info">
+                <p><strong>Address:</strong> Saveetha Engineering College, Chennai, Tamil Nadu, India.</p>
+                <p><strong>Phone:</strong> +91-44-1234 5678</p>
+                <p><strong>Email:</strong> info@saveetha.ac.in</p>
+            </div>
+            <form action="#" method="post">
+                <h3>Send us a message:</h3>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Saveetha Engineering College. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
